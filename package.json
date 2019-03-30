@@ -15,7 +15,6 @@
     "line chart"
   ],
   "dependencies": {
-    "@ionic/core": "^4.1.2",
     "@ionic/vue": "0.0.4",
     "stencil-linechart": "^0.2.2",
     "vue": "^2.6.10",

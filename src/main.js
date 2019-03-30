@@ -5,11 +5,14 @@ import store from "./store";
 import { defineCustomElements as linechart } from "stencil-linechart/dist/loader";
 import Ionic from "@ionic/vue";
 
-Vue.use(Ionic);
 
 Vue.config.ignoredElements = [/jeep-\w*/];
+Vue.config.ignoredElements = [/ion-\w*/];
 
+Vue.use(Ionic);
 linechart(window);
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,
