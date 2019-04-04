@@ -1,13 +1,9 @@
 <template>
-  <ion-app>
+  <div class="ion-page">
     <ion-header>
       <ion-toolbar color="primary">
         <ion-buttons slot="start">
-          <!--
-                *** does not work
-            <ion-back-button defaultHref="/"></ion-back-button>
-            -->
-          <ion-button @click="goBackHome()" size="small">Back</ion-button>
+          <ion-back-button defaultHref="/"></ion-back-button>
         </ion-buttons>
         <ion-title>Linechart</ion-title>
       </ion-toolbar>
@@ -237,7 +233,7 @@
         </div>
       </template>
     </ion-content>
-  </ion-app>
+  </div>
 </template>
 
 <script>
@@ -267,11 +263,6 @@ export default {
         root.style.setProperty("--chart-axis-x-interval", "1");
         break;
       }
-    }
-  },
-  methods: {
-    goBackHome: function() {
-      this.$router.push("/");
     }
   }
 };
