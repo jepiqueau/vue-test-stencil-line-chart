@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import { defineCustomElements as linechart } from "stencil-linechart/dist/loader";
+import { defineCustomElements as linechart } from "stencil-linechart/loader";
 
 import Ionic from "@ionic/vue";
 import "@ionic/core/css/ionic.bundle.css";
